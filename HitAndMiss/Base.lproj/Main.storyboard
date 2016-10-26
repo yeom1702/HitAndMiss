@@ -54,14 +54,14 @@
                                     <action selector="btnAdd:" destination="gri-Jr-u9u" eventType="touchUpInside" id="eqM-8b-rSQ"/>
                                 </connections>
                             </button>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="E1t-fl-4Lf">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="40" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="E1t-fl-4Lf">
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="myCell" id="33e-a6-Ga3" customClass="MyTableCell" customModule="HitAndMiss" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="281.5" height="44"/>
+                                        <rect key="frame" x="0.0" y="1" width="281" height="40"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="33e-a6-Ga3" id="G8d-NR-iQb">
-                                            <frame key="frameInset" width="281.5" height="43.5"/>
+                                            <frame key="frameInset" width="281" height="39.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h3A-V3-S7j">
@@ -76,7 +76,7 @@
                                                     </connections>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YO8-iE-sz1">
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -89,6 +89,7 @@
                                                 <constraint firstItem="YO8-iE-sz1" firstAttribute="centerY" secondItem="h3A-V3-S7j" secondAttribute="centerY" id="iex-ou-5bb"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.98633805138388275" green="0.9931001055511014" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <connections>
                                             <outlet property="cellLblName" destination="YO8-iE-sz1" id="ln8-IO-gJg"/>
                                         </connections>
@@ -129,7 +130,7 @@
                             <constraint firstItem="kSd-uU-bR2" firstAttribute="top" secondItem="HKC-li-czR" secondAttribute="bottom" constant="-30" id="MLf-df-xHh"/>
                             <constraint firstItem="kSd-uU-bR2" firstAttribute="leading" secondItem="HKC-li-czR" secondAttribute="trailing" constant="15" id="Vdc-Q9-sBW"/>
                             <constraint firstItem="Shj-um-DkA" firstAttribute="centerY" secondItem="z4X-1R-P6T" secondAttribute="centerY" id="We9-s5-Mbf"/>
-                            <constraint firstItem="E1t-fl-4Lf" firstAttribute="bottom" secondItem="71H-1a-NUs" secondAttribute="top" constant="-38" id="b3U-pp-Uoh"/>
+                            <constraint firstItem="E1t-fl-4Lf" firstAttribute="bottom" secondItem="71H-1a-NUs" secondAttribute="top" constant="-20" id="b3U-pp-Uoh"/>
                             <constraint firstItem="HKC-li-czR" firstAttribute="top" secondItem="w0P-yE-dhH" secondAttribute="bottom" constant="35" id="eKE-z7-T48"/>
                             <constraint firstItem="qkg-kl-5lN" firstAttribute="centerY" secondItem="z4X-1R-P6T" secondAttribute="centerY" id="fCX-oM-h7W"/>
                             <constraint firstItem="HKC-li-czR" firstAttribute="centerX" secondItem="vME-Ue-aMp" secondAttribute="centerX" constant="-15" id="fXm-Mj-3La"/>

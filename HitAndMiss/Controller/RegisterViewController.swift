@@ -37,7 +37,10 @@ class RegisterViewController: UIViewController, UITableViewDataSource, UITableVi
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "myCell", for: indexPath) as! MyTableCell
-       
+        
+        cell.layer.cornerRadius = 15
+        cell.layer.borderColor = UIColor.lightGray.cgColor
+        cell.layer.borderWidth = 0.8
         cell.cellLblName.text = nameArray[indexPath.row]
         cell.registerViewController = self;
         
