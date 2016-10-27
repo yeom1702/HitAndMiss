@@ -31,16 +31,21 @@ class RegisterViewController: UIViewController, UITableViewDataSource, UITableVi
         // Dispose of any resources that can be recreated.
     }
     
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        lblName.resignFirstResponder()
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return nameArray.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "myCell", for: indexPath) as! MyTableCell
+        let borderColor = UIColor(red: 130.0/255.0, green: 145.0/255.0, blue: 255.0/255.0, alpha: 1.0)
         
         cell.layer.cornerRadius = 15
-        cell.layer.borderColor = UIColor.lightGray.cgColor
-        cell.layer.borderWidth = 0.8
+        cell.layer.borderColor = borderColor.cgColor
+        cell.layer.borderWidth = 0.5
         cell.cellLblName.text = nameArray[indexPath.row]
         cell.registerViewController = self;
         

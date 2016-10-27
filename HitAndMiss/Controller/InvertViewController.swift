@@ -18,16 +18,16 @@ class InvertViewController: UICollectionViewController {
     var missIndex = Set<Int>()
     
     fileprivate let colors = [
-        "0": UIColor(red: 239 / 255.0,    green: 108 / 255.0,     blue: 106 / 255.0,     alpha: 1.0),
-        "1": UIColor(red: 214 / 255.0,    green: 152 / 255.0,     blue: 228 / 255.0,     alpha: 1.0),
-        "2": UIColor(red: 242 / 255.0,    green: 167 / 255.0,     blue: 92  / 255.0,     alpha: 1.0),
-        "3": UIColor(red: 229 / 255.0,    green: 201 / 255.0,     blue: 91  / 255.0,     alpha: 1.0),
-        "4": UIColor(red: 35  / 255.0,    green: 123 / 255.0,     blue: 160 / 255.0,     alpha: 1.0),
-        "5": UIColor(red: 112 / 255.0,    green: 193 / 255.0,     blue: 178 / 255.0,     alpha: 1.0),
-        "6": UIColor(red: 114 / 255.0,    green: 189 / 255.0,     blue: 226 / 255.0,     alpha: 1.0),
-        "7": UIColor(red: 160 / 255.0,    green: 178 / 255.0,     blue: 186 / 255.0,     alpha: 1.0),
-        "8": UIColor(red: 175 / 255.0,    green: 187 / 255.0,     blue: 100 / 255.0,     alpha: 1.0),
-        "9": UIColor(red: 143 / 255.0,    green: 226 / 255.0,     blue: 230 / 255.0,     alpha: 1.0)
+        "0": UIColor(red: 239 / 255.0, green: 108 / 255.0, blue: 106 / 255.0, alpha: 1.0),
+        "1": UIColor(red: 214 / 255.0, green: 152 / 255.0, blue: 228 / 255.0, alpha: 1.0),
+        "2": UIColor(red: 242 / 255.0, green: 167 / 255.0, blue: 92  / 255.0, alpha: 1.0),
+        "3": UIColor(red: 229 / 255.0, green: 201 / 255.0, blue: 91  / 255.0, alpha: 1.0),
+        "4": UIColor(red: 35  / 255.0, green: 123 / 255.0, blue: 160 / 255.0, alpha: 1.0),
+        "5": UIColor(red: 112 / 255.0, green: 193 / 255.0, blue: 178 / 255.0, alpha: 1.0),
+        "6": UIColor(red: 114 / 255.0, green: 189 / 255.0, blue: 226 / 255.0, alpha: 1.0),
+        "7": UIColor(red: 160 / 255.0, green: 178 / 255.0, blue: 186 / 255.0, alpha: 1.0),
+        "8": UIColor(red: 175 / 255.0, green: 187 / 255.0, blue: 100 / 255.0, alpha: 1.0),
+        "9": UIColor(red: 143 / 255.0, green: 226 / 255.0, blue: 230 / 255.0, alpha: 1.0)
     ]
     
     //fileprivate let itemsPerRow: CGFloat = 3
